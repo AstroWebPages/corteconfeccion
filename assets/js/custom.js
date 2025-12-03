@@ -1,62 +1,19 @@
 (function ($) {
-	
-	"use strict";
-	$('.owl-men-item').owlCarousel({
-		items:5,
-		loop:true,
-		dots: true,
-		nav: true,
-		margin:30,
-		  responsive:{
-			  0:{
-				  items:1
-			  },
-			  600:{
-				  items:2
-			  },
-			  1000:{
-				  items:3
-			  }
-		 }
-	})
+    "use strict";
 
-	$('.owl-women-item').owlCarousel({
-		items:5,
-		loop:true,
-		dots: true,
-		nav: true,
-		margin:30,
-		  responsive:{
-			  0:{
-				  items:1
-			  },
-			  600:{
-				  items:2
-			  },
-			  1000:{
-				  items:3
-			  }
-		 }
-	 })
+    $('.owl-emp-item, .owl-adm-item, .owl-med-item, .owl-coc-item, .owl-ind-item, .owl-lys-item, .owl-est-item').owlCarousel({
+        items: 5,
+        loop: true,
+        dots: true,
+        nav: true,
+        margin: 30,
+        responsive: {
+            0: { items: 1 },
+            600: { items: 2 },
+            1000: { items: 3 }
+        }
+    });
 
-	$('.owl-kid-item').owlCarousel({
-		items:5,
-		loop:true,
-		dots: true,
-		nav: true,
-		margin:30,
-		  responsive:{
-			  0:{
-				  items:1
-			  },
-			  600:{
-				  items:2
-			  },
-			  1000:{
-				  items:3
-			  }
-		 }
-	 })
 
 	$(window).scroll(function() {
 	  var scroll = $(window).scrollTop();
